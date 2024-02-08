@@ -1,0 +1,67 @@
+<!-- Write a JavaScript program to decide that you eligible for voting? (using all function) -->
+
+<script type="text/JavaScript">
+
+// simple function
+
+function age() {
+    
+    var a = parseInt(prompt("Enter Your Age :- "));
+
+    if(a < 18){
+        document.write(`<h1>You Can't Voting.....!</h1>`);
+    }else if(a > 18){
+        document.write(`<h1>You Can Voting.....!</h1>`);
+    }else{
+        document.write(`<h1>You Can Also Voting.....!</h1>`);
+    }
+}
+age()
+
+
+// using no return with parameter function
+
+function age1(a) {
+
+    if(a < 18){
+        document.write(`<h1>You Can't Voting.....!</h1>`);
+    }else if(a > 18){
+        document.write(`<h1>You Can Voting.....!</h1>`);
+    }else{
+        document.write(`<h1>You Can Also Voting.....!</h1>`);
+    }
+}
+age1(25);
+
+
+// return with no parameter function
+
+function age2() {
+    var a = parseInt(prompt("Enter Your Age :- "));
+    return a;
+}
+var a = age2();
+    if(a < 18){
+        document.write(`<h1>You Can't Voting.....!</h1>`);
+    }else if(a > 18){
+        document.write(`<h1>You Can Voting.....!</h1>`);
+    }else{
+        document.write(`<h1>You Can Also Voting.....!</h1>`);
+    }
+
+
+// return with parameter function
+
+function age3(a) {
+    return a;
+}
+var a = age3(25);
+    if(a < 18){
+        document.write(`<h1>You Can't Voting.....!</h1>`);
+    }else if(a > 18){
+        document.write(`<h1>You Can Voting.....!</h1>`);
+    }else{
+        document.write(`<h1>You Can Also Voting.....!</h1>`);
+    }
+
+</script>

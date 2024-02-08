@@ -1,0 +1,113 @@
+<!-- Write a JavaScript program to find which number is greter in 3 numbers using nested if else.(using all function) -->
+
+<script type="text/JavaScript">
+
+// simple function
+
+function no() {
+
+    var a = parseInt(prompt("Enter Number A :- "));
+    var b = parseInt(prompt("Enter Number B :- "));
+    var c = parseInt(prompt("Enter Number C :- "));
+
+    if(a>b){
+		if(a>c){
+			document.write(`<h1>A is Big</h1>`);
+		}else{
+			document.write(`<h1>B is Big</h1>`);
+		}
+	}else{
+		if(b>c){
+			document.write(`<h1>B is Big</h1>`);
+		}else{
+			document.write(`<h1>C is Big</h1>`);
+        }
+    }
+}
+no();
+
+
+// no return with parameter function
+
+function no1(a, b, c) {
+
+if(a>b){
+    if(a>c){
+        document.write(`<h1>A is Big</h1>`);
+    }else{
+        document.write(`<h1>B is Big</h1>`);
+    }
+}else{
+    if(b>c){
+        document.write(`<h1>B is Big</h1>`);
+    }else{
+        document.write(`<h1>C is Big</h1>`);
+    }
+}
+}
+no1(5, 10, 15);
+
+
+// return with no parameter function
+
+function no2() {
+    var a = parseInt(prompt("Enter Number A :- ")); 
+    return a;
+}
+function no3() {
+    var b = parseInt(prompt("Enter Number B :- ")); 
+    return b;
+}
+function no4() {
+    var c = parseInt(prompt("Enter Number C :- ")); 
+    return c;
+}
+
+var a = no2();
+var b = no3();
+var c = no4();
+if(a>b){
+    if(a>c){
+        document.write(`<h1>A is Big</h1>`);
+    }else{
+        document.write(`<h1>B is Big</h1>`);
+    }
+}else{
+    if(b>c){
+        document.write(`<h1>B is Big</h1>`);
+    }else{
+        document.write(`<h1>C is Big</h1>`);
+    }
+}
+
+
+// return with parameter function
+
+function no5(a) {
+    return a;
+}
+function no6(b) {
+    return b;
+}
+function no7(c) {
+    return c;
+}
+
+var a = no5(5);
+var b = no6(10);
+var c = no7(15);
+if(a>b){
+    if(a>c){
+        document.write(`<h1>A is Big</h1>`);
+    }else{
+        document.write(`<h1>B is Big</h1>`);
+    }
+}else{
+    if(b>c){
+        document.write(`<h1>B is Big</h1>`);
+    }else{
+        document.write(`<h1>C is Big</h1>`);
+    }
+}
+
+</script>

@@ -1,0 +1,87 @@
+<!-- Write a JavaScript   program to input angles of a triangle and check whether triangle is valid or not.(using all function) -->
+
+<script type="text/JavaScript">
+
+// simple function
+
+function no() {
+
+    var a = parseInt(prompt("Enter Number A :- "));
+    var b = parseInt(prompt("Enter Number B :- "));
+    var c = parseInt(prompt("Enter Number C :- "));
+
+    ans = a + b + c;
+
+    if(ans == 180){
+        document.write(`<h1>Triangle is Valid</h1>`);
+    }else{
+        document.write(`<h1>Triangle is Not Valid</h1>`);
+    }
+}
+no();
+
+
+// no return with parameter function
+
+function no1(a, b, c) {
+
+ans = a + b + c;
+
+if(ans == 180){
+    document.write(`<h1>Triangle is Valid</h1>`);
+}else{
+    document.write(`<h1>Triangle is Not Valid</h1>`);
+}
+}
+no1(60, 60, 60);
+
+
+// return with no parameter function
+
+function no2() {
+    var a = parseInt(prompt("Enter Number A :- ")); 
+    return a;
+}
+function no3() {
+    var b = parseInt(prompt("Enter Number B :- ")); 
+    return b;
+}
+function no4() {
+    var c = parseInt(prompt("Enter Number C :- ")); 
+    return c;
+}
+
+var a = no2();
+var b = no3();
+var c = no4();
+ans = a + b + c;
+if(ans == 180){
+    document.write(`<h1>Triangle is Valid</h1>`);
+}else{
+    document.write(`<h1>Triangle is Not Valid</h1>`);
+}
+
+
+// return with parameter function
+
+function no5(a) {
+    return a;
+}
+function no6(b) {
+    return b;
+}
+function no7(c) {
+    return c;
+}
+
+var a = no5(60);
+var b = no6(60);
+var c = no7(60);
+ans = a + b + c;
+if(ans == 180){
+    document.write(`<h1>Triangle is Valid</h1>`);
+}else{
+    document.write(`<h1>Triangle is Not Valid</h1>`);
+}
+
+</script>
